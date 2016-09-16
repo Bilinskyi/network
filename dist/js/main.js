@@ -1,10 +1,35 @@
 
 $(document).ready(function(){
 
-$('.btn-toggle').on('click', function(e) {
- e.preventDefault(); 
-$('.nav').slideToggle();
-});
+  $('.btn-toggle').on('click', function(e) {
+   e.preventDefault(); 
+   $('.nav').slideToggle();
+ });
+
+  $(".slider-1").owlCarousel({
+    singleItem : true,
+    autoHeight : true,
+    navigation : true,
+    loop:true,
+    navigationText : ["",""]
+
+    // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+    });
+
+$('.fancybox-media').fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none',
+    helpers : {
+      media : {}
+    }
+  });
+
+
 
 
 // $(window).on('load resize', function(e) {
@@ -21,35 +46,7 @@ $('.nav').slideToggle();
 //     }
 //   });
 
-// $('#slider-1').bxSlider({
-// 		controls: true, 
-// 		pager: false,
-// 		slideWidth: 940,
-// 		minSlides: 4,
-// 		maxSlides: 4,
-// 		moveSlides: 1
-// 	});
 
-// $("#owl-demo").owlCarousel({
-//       navigation : true, // Show next and prev buttons
-//       slideSpeed : 300,
-//       paginationSpeed : 400,
-//       singleItem: false,
-//       items: 4,
-//       pagination : true,
-//       itemsDesktop : [1920,4],
-//       navigationText: false,
-//       // autoPlay: 20000,
-//       // "singleItem:true" is a shortcut for:
-//       // items : 1, 
-//       // itemsDesktop : false,
-//       // itemsDesktopSmall : false,
-//       // itemsTablet: false,
-//       // itemsMobile : false
-//     mouseDrag : false,
-//     touchDrag : false
-
-//   });  
 
  //    $("a.modal-form").fancybox({
  //       'hideOnContentClick': true,
@@ -59,18 +56,18 @@ $('.nav').slideToggle();
  
  // });
 
-// $('header a[href^="#"]').on('click', function(event) {
+$('a.scr[href^="#"]').on('click', function(event) {
 
-//     var target = $( $(this).attr('href') );
+    var target = $( $(this).attr('href') );
 
-//     if( target.length ) {
-//         event.preventDefault();
-//         $('html, body').animate({
-//             scrollTop: target.offset().top -85
-//         }, 600);
-//     }
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top 
+        }, 600);
+    }
 
-// });
+});
 
 //  jQuery(function($){ 
 //    $(".phone_mask_1").mask("+7(999) 999-9999");
@@ -78,3 +75,4 @@ $('.nav').slideToggle();
 // });
 
 });
+
