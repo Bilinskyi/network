@@ -865,7 +865,6 @@ header {
   }
   &.pers-text {
     margin-bottom: 20px;
-    padding-bottom: 40px;
     background-color: #f6f6ff;
     padding-top: 15px;
   }
@@ -884,6 +883,7 @@ header {
     line-height: 22px;
     font-weight: 400;
     margin: 7px 0;
+    padding-bottom: 40px;
     @media #{$bp-small} {
       font-size: 15px;
       line-height: 18px;

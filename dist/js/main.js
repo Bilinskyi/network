@@ -21,15 +21,26 @@ $(document).ready(function(){
       // itemsMobile : false
     });
 
-$('.fancybox-media').fancybox({
-    openEffect  : 'none',
-    closeEffect : 'none',
-    helpers : {
-      media : {}
-    }
+
+$(".fancybox-media").click(function() {
+    $.fancybox({
+      'padding'   : 0,
+      'autoScale'   : false,
+      'transitionIn'  : 'none',
+      'transitionOut' : 'none',
+      'title'     : this.title,
+      'maxWidth':  640,
+      'maxHeight'    : 320,
+      'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+      'type'      : 'swf',
+      'swf'     : {
+      'wmode'       : 'transparent',
+      'allowfullscreen' : 'true'
+      }
+    });
+
+    return false;
   });
-
-
 
 
 // $(window).on('load resize', function(e) {
