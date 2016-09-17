@@ -93,14 +93,14 @@ gulp.task('ftp', function () {
     return gulp.src('dist/**/*')
         .pipe(sftp({
             host: 'styleup.ftp.ukraine.com.ua',
-            user: 'styleup_3',
-            pass: 'killahill',
-            remotePath: '/home/styleup/'
+            user: 'styleup',
+            pass: '123321p)',
+            remotePath: '/home/styleup/divclass.org/www/network5'
         }));
 });
 
 
-gulp.task('watch', ['browserSync'], function () {
+gulp.task('watch', ['sass', 'browserSync'], function () {
 	gulp.watch('app/sass/**/*.scss', ['sass']);
 // Reloads the browser whenever HTML or JS files change
 gulp.watch('app/*.html', browserSync.reload); 
