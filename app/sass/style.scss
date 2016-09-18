@@ -1019,6 +1019,9 @@ header {
     background-color: #f6f6ff;
     b {
       padding-left: 13px;
+      @media #{$bp-large} {
+            padding-left: 25px;
+      }
     }
     p  {
       padding-right: 15px;
