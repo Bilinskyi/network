@@ -29,8 +29,8 @@ $(".fancybox-media").click(function() {
       'transitionIn'  : 'none',
       'transitionOut' : 'none',
       'title'     : this.title,
-      'maxWidth':  640,
-      'maxHeight'    : 320,
+      'maxWidth':  840,
+      'maxHeight'    : 460,
       'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
       'type'      : 'swf',
       'swf'     : {
