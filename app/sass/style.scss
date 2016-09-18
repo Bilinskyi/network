@@ -905,7 +905,10 @@ header {
   &.pers-text {
     margin-bottom: 20px;
     background-color: #f6f6ff;
-    padding-top: 15px;
+    // padding-top: 15px;
+    &> div {
+      padding-top: 15px;
+    }
   }
   b {
     font-size: 19px;

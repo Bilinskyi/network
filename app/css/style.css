@@ -1171,6 +1171,9 @@ header h4 {
 .person-wrapp.pers-text {
   margin-bottom: 20px;
   background-color: #f6f6ff;
+}
+
+.person-wrapp.pers-text > div {
   padding-top: 15px;
 }
 
