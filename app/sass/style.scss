@@ -915,7 +915,9 @@ header {
     }
     margin-bottom: 20px;
     background-color: #f6f6ff;
-    padding-top: 15px;
+    & > div {
+      padding-top: 15px;
+    }
   }
   b {
     font-size: 19px;
@@ -1015,6 +1017,9 @@ header {
   & > div:last-child {
     width: 36%;
     background-color: #f6f6ff;
+    b {
+      padding-left: 13px;
+    }
     p  {
       padding-right: 15px;
       padding-left: 13px;

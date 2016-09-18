@@ -1740,7 +1740,6 @@ header h4 {
 .person-wrapp.pers-text {
   margin-bottom: 20px;
   background-color: #f6f6ff;
-  padding-top: 15px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1751,6 +1750,10 @@ header h4 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.person-wrapp.pers-text > div {
+  padding-top: 15px;
 }
 
 .person-wrapp b {
@@ -1892,6 +1895,10 @@ header h4 {
 .person-wrapp > div:last-child {
   width: 36%;
   background-color: #f6f6ff;
+}
+
+.person-wrapp > div:last-child b {
+  padding-left: 13px;
 }
 
 .person-wrapp > div:last-child p {
