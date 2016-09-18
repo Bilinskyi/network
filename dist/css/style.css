@@ -1901,6 +1901,12 @@ header h4 {
   padding-left: 13px;
 }
 
+@media only screen and (max-width: 1199px) {
+  .person-wrapp > div:last-child b {
+    padding-left: 25px;
+  }
+}
+
 .person-wrapp > div:last-child p {
   padding-right: 15px;
   padding-left: 13px;
