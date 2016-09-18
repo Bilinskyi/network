@@ -914,7 +914,7 @@ header h4 {
 
 @media only screen and (max-width: 479px) {
   .section-about .list-1 li:nth-child(3) span {
-    line-height: 18px;
+    line-height: 19px;
   }
 }
 
