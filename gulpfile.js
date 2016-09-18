@@ -91,6 +91,8 @@ gulp.task('build', ['clean', 'images', 'sass', 'scripts' ], function() {
 
 
 
+
+
 gulp.task('watch', ['sass', 'browserSync'], function () {
 	gulp.watch('app/sass/**/*.scss', ['sass']);
 // Reloads the browser whenever HTML or JS files change

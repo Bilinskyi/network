@@ -19,6 +19,13 @@ body {
   color: black;
   font-family: 'Merriweather', serif;
   font-weight: 400;
+  min-width: 1156px;
+}
+.container {
+  position: relative;
+  width: 1156px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .center {
   text-align: center;
