@@ -908,6 +908,16 @@ header h4 {
   margin-bottom: 20px;
 }
 
+.section-about .list-1 li:nth-child(3) span {
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 479px) {
+  .section-about .list-1 li:nth-child(3) span {
+    line-height: 18px;
+  }
+}
+
 @media only screen and (max-width: 479px) {
   .section-about .list-1 li {
     padding-left: 0;
@@ -1537,7 +1547,8 @@ header h4 {
 .slider-wrapp .comment-text .office-t {
   font-size: 17px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 21px;
+  margin-top: 3px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1645,6 +1656,16 @@ header h4 {
   }
 }
 
+.work-case.l-h span {
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  .work-case.l-h span {
+    line-height: 25px;
+  }
+}
+
 .work-case span {
   position: absolute;
   left: 0;
@@ -1722,6 +1743,16 @@ header h4 {
   padding-top: 15px;
 }
 
+@media only screen and (max-width: 1199px) {
+  .person-wrapp.pers-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .person-wrapp b {
   font-size: 19px;
   font-weight: 700;
@@ -1756,6 +1787,12 @@ header h4 {
   width: 100%;
 }
 
+@media only screen and (max-width: 1199px) {
+  .person-wrapp img {
+    height: auto;
+  }
+}
+
 .person-wrapp .abs-block {
   position: absolute;
   top: 50%;
@@ -1776,6 +1813,12 @@ header h4 {
 @media only screen and (max-width: 991px) {
   .person-wrapp .abs-block .note-1 {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .person-wrapp .abs-block .note-1 {
+    font-size: 14px;
   }
 }
 
@@ -1801,6 +1844,13 @@ header h4 {
   }
 }
 
+@media only screen and (max-width: 479px) {
+  .person-wrapp .abs-block .head-3 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
 .person-wrapp .abs-block .head-3 span {
   display: block;
   font-weight: 400;
@@ -1814,6 +1864,12 @@ header h4 {
 
 .person-wrapp > div:first-child p {
   padding-right: 95px;
+}
+
+@media only screen and (max-width: 479px) {
+  .person-wrapp > div:first-child p {
+    padding-right: 30px;
+  }
 }
 
 .person-wrapp > div:first-child:after {
@@ -1912,6 +1968,7 @@ header h4 {
 @media only screen and (max-width: 615px) {
   .section-partnership .flex-container-3 .flex-item {
     width: 100% !important;
+    margin-bottom: 25px !important;
   }
   .section-partnership .flex-container-3 .flex-item img {
     display: block;
