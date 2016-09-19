@@ -90,15 +90,7 @@ gulp.task('build', ['clean', 'images', 'sass', 'scripts' ], function() {
 
 
 
-gulp.task('ftp', function () {
-    return gulp.src('dist/**/*')
-        .pipe(sftp({
-            host: 'styleup.ftp.ukraine.com.ua',
-            user: 'styleup',
-            pass: '123321p)',
-            remotePath: '/home/styleup/divclass.org/www/newnew'
-        }));
-});
+
 
 gulp.task('watch', ['sass', 'browserSync'], function () {
 	gulp.watch('app/sass/**/*.scss', ['sass']);
