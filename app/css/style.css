@@ -699,22 +699,6 @@ header h4 {
   margin-bottom: 140px;
 }
 
-.section-about .bg-video > img {
-  width: 100%;
-  height: auto;
-}
-
-.section-about .bg-video a {
-  position: absolute;
-  margin: auto;
-  width: 60px;
-  height: 69px;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
 .section-about .list-1 {
   padding-top: 30px;
   display: inline-block;
@@ -1171,6 +1155,7 @@ header h4 {
 .person-wrapp.pers-text {
   margin-bottom: 20px;
   background-color: #f6f6ff;
+  padding-top: 15px;
 }
 
 .person-wrapp.pers-text > div {

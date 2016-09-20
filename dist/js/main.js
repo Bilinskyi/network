@@ -22,25 +22,25 @@ $(document).ready(function(){
     });
 
 
-$(".fancybox-media").click(function() {
-    $.fancybox({
-      'padding'   : 0,
-      'autoScale'   : false,
-      'transitionIn'  : 'none',
-      'transitionOut' : 'none',
-      'title'     : this.title,
-      'maxWidth':  840,
-      'maxHeight'    : 460,
-      'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
-      'type'      : 'swf',
-      'swf'     : {
-      'wmode'       : 'transparent',
-      'allowfullscreen' : 'true'
-      }
-    });
+// $(".fancybox-media").click(function() {
+//     $.fancybox({
+//       'padding'   : 0,
+//       'autoScale'   : false,
+//       'transitionIn'  : 'none',
+//       'transitionOut' : 'none',
+//       'title'     : this.title,
+//       'maxWidth':  840,
+//       'maxHeight'    : 460,
+//       'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+//       'type'      : 'swf',
+//       'swf'     : {
+//       'wmode'       : 'transparent',
+//       'allowfullscreen' : 'true'
+//       }
+//     });
 
-    return false;
-  });
+//     return false;
+//   });
 
 
 // $(window).on('load resize', function(e) {
