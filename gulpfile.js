@@ -9,7 +9,9 @@ jsmin = require('gulp-jsmin'),
 browserSync = require('browser-sync').create(),
 imageop = require('gulp-image-optimization'),
 del         = require('del'), // Подключаем библиотеку для удаления файлов и папок
-autoprefixer = require('gulp-autoprefixer');
+autoprefixer = require('gulp-autoprefixer'),
+cleanCSS = require('gulp-clean-css');
+
 
 gulp.task('browserSync', function() {
 	browserSync.init({
@@ -33,6 +35,7 @@ gulp.task('sass', function () {
 	return gulp.src('app/sass/**/*.scss')
 	.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 	.pipe(autoprefixer(['last 15 versions'], { cascade: true }))
+	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({
 		stream: true
@@ -89,6 +92,15 @@ gulp.task('build', ['clean', 'images', 'sass', 'scripts' ], function() {
 	});
 
 
+gulp.task('ftp', function () {
+    return gulp.src('dist/**/*')
+        .pipe(sftp({
+            host: 'styleup.ftp.ukraine.com.ua',
+            user: 'styleup',
+            pass: '123321(p)',
+            remotePath: '/home/styleup/divclass.org/www/newnet'
+        }));
+});
 
 
 
